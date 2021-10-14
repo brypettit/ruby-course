@@ -12,8 +12,10 @@ color = gets.chop
 
 # Lesson 5: Adding an Else Statement
 
-if color.downcase == "blue"
+if color.downcase == "blue" || color.downcase == "orange"
     puts "Wow! My favorite color is #{color} also!"
-else
+  elsif color.downcase == "red"
+    puts "I definitely don't like #{color}."
+  else
     puts "I'm not a big fan of #{color}."
 end
